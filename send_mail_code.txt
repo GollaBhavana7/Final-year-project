@@ -1,0 +1,25 @@
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+def sendMail(email, subject, body):
+    em = [email]  # List to store recipient emails
+
+    # Email credentials
+    email_address = "evotingotp4@gmail.com"
+    email_password = "xowpojqyiygprhgr"
+
+    # Create MIME message
+    msg = MIMEMultipart()
+    msg["From"] = email_address
+    msg["To"] = email
+    msg["Subject"] = subject
+    msg.attach(MIMEText(body, "plain"))  # Add body as plain text
+
+    # Sending Email
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as connection:
+        connection.login(email_address, email_password)
+        connection.sendmail(from_addr=email_address, to_addrs=em, msg=msg.as_string())
+
+# Example Usage
+#sendMail("recipient@example.com", "Event Live Update", "Hello, this is the body of the email.")

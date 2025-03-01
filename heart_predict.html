@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="static/assets/css/main.css" rel="stylesheet">
+  <style>
+  .info-box {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .info-box:hover {
+    transform: scale(1.05);
+  }
+  .info-box h3 {
+    font-weight: bold;
+    text-align: center;
+  }
+  .info-box ul {
+    padding-left: 20px;
+  }
+</style>
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header sticky-top">
+
+
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Multi Disease Classification</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="/home">Home<br></a></li>
+            <li><a href="/heart" class="active">Predict Heart Disease</a></li>
+            <li><a href="/diabetes">Predict Diabetes Disease</a></li>
+            <li><a href="/parkinson">Predict Parkinson Disease</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                Notebook
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="/heart_notebook">Heart</a></li>
+                <li><a class="dropdown-item" href="/diabetes_notebook">Diabetes</a></li>
+                <li><a class="dropdown-item" href="/parkinson_notebook">Parkinson</a></li>
+              </ul>
+            </li> 
+            <li><a href="/">Logout</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div style="background: url('static/assets/img/departments-3.jpg') no-repeat center center; 
+          background-size: cover; padding: 40px 0; position: relative; 
+          background-blend-mode: overlay; background-color: rgba(255, 255, 255, 0.65);">
+          <div class="row d-flex justify-content-center text-center">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Heart Disease Prediction</h1>
+              <div class="row mt-5 text-center">
+                <div class="col-md-4 d-flex">
+                  <div class="info-box border border-danger w-100">
+                    <h4 class="text-danger"><i class="fas fa-heartbeat"></i> Symptoms</h4>
+                    <hr>
+                    <ul class="text-start">
+                      <li>Chest pain or discomfort</li>
+                      <li>Shortness of breath</li>
+                      <li>Pain in neck, back, jaw, stomach, or shoulder</li>
+                      <li>Nausea, lightheadedness, or cold sweat</li>
+                      <li>Pain in one or both arms</li>
+                      <li>Fatigue</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                  <div class="info-box border border-warning w-100">
+                    <h4 class="text-warning"><i class="fas fa-exclamation-triangle"></i> Causes</h4>
+                    <hr>
+                    <ul class="text-start">
+                      <li>High blood pressure</li>
+                      <li>High cholesterol</li>
+                      <li>Smoking</li>
+                      <li>Lack of physical activity</li>
+                      <li>Obesity</li>
+                      <li>Diabetes</li>
+                      <li>Family history of heart disease</li>
+                      <li>Excessive alcohol consumption</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                  <div class="info-box border border-success w-100">
+                    <h4 class="text-success"><i class="fas fa-shield-alt"></i> Prevention</h4>
+                    <hr>
+                    <ul class="text-start">
+                      <li>Keeping a healthy weight</li>
+                      <li>Eating a diet low in saturated fats</li>
+                      <li>Getting regular exercise</li>
+                      <li>Avoiding smoking</li>
+                      <li>Limiting alcohol intake</li>
+                      <li>Managing stress effectively</li>
+                      <li>Monitoring blood pressure and cholesterol levels</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Title -->
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form action="/predict" method="post" class="p-4 border rounded bg-light shadow">
+          <div class="mb-3">
+            <label class="form-label">Age:</label>
+            <input type="number" class="form-control" name="0" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Chest Pain types (CP)</label>
+            <input type="number" class="form-control" name="1" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Resting Blood Pressure (trestbps)</label>
+            <input type="number" class="form-control" name="2" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Serum Cholestoral in mg/dl</label>
+            <input type="number" class="form-control" name="3" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Maximum Heart Rate achieved (thalach)</label>
+            <input type="number" class="form-control" name="4" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">ST depression induced by exercise (Oldpeak)</label>
+            <input type="number" step="0.1" class="form-control" name="5" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Major vessels colored by fluoroscopy (CA) </label>
+            <input type="number" class="form-control" name="6" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">thal</label>
+            <input type="number" class="form-control" name="7" required>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary w-100">Predict</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
