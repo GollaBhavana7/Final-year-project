@@ -150,5 +150,11 @@ def predict3():
     return render_template('prediction.html', output=output, alert_class=alert_class, icon=icon,text_color=text_color)
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+import streamlit as st
+
+def main():
+    st.title("My Streamlit App")
+    st.write("Hello, world! Your app is working!")
+
+if __name__ == "__main__":
+    main() 
