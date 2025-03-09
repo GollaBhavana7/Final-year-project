@@ -1,9 +1,0 @@
-flask
-streamlit
-streamlit-option-menu>=0.3.2
-numpy==1.26.0
-pandas>=2.0.3
-scikit-learn>=1.2.2
-matplotlib>=3.7.1
-seaborn>=0.12.2
-pickle-mixin>=1.0.2
